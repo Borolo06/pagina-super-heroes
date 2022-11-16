@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-seccion: rgb(189, 38, 38);
+    --color-texto: #232323;
+    --color-texto-casi-rojo: rgb(223, 85, 85);
+    --color-texto-amarillo: rgb(255, 255, 5);
+    --color-divs-imgs: rgba(204, 204, 204, 0.562);
+}
+
+.contenedor-mobile {
+    margin-left: 0;
+    width: 560px;
+    height: 700px;
+    position: relative;
+    background-color: #fff;
+}
+
+.logo-header {
+    width: 50px;
+}
+
+.hr-header {
+    width: 402px;
+}
+
+.div-header {
+    display: block;
+    margin-left: 60px;
+}
+
+header {
+    display: flex;
+    width: 400px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-texto-casi-rojo);
+}
+
+.div-img {
+    width: 155px;
+    height: 696px;
+    background-color: var(--color-seccion);
+    float: right;
+    margin-top: -426px;
+    animation: derecha 3s forwards;
+    animation-delay: 2.9s;
+}
+
+@keyframes derecha {
+    0% {
+        position: relative;
+        left: 300px;
+    }
+    100% {
+        position: relative;
+        left: 0;
+    }
+}
+
+.iron-derecha {
+    width: 200px;
+    position: relative;
+    right: 70px;
+    top: 320px;
+}
+
+.imagenes-abajo {
+    width: 270px;
+    height: 200px;
+    background-color: var(--color-seccion);
+    margin-top: 70px;
+    border-top-right-radius: 20px;
+    animation: abajo 3s forwards;
+    animation-delay: 2.9s;
+}
+
+.contenedor-3-imagenes {
+    width: 250px;
+    height: 180px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@keyframes abajo {
+    0% {
+        position: relative;
+        top: 400px;
+    }
+    100% {
+        position: relative;
+        top: 00;
+    }
+}
+
+#img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--color-divs-imgs);
+    pointer-events: none;
+}
+
+#img-2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--color-divs-imgs);
+}
+
+#img-3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--color-divs-imgs);
+}
+
+.spider-man {
+    width: 60px;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.capitan-america {
+    width: 70px;
+    position: relative;
+    top: 4px;
+    left: 0px;
+}
+
+.ant-man {
+    width: 70px;
+    position: relative;
+    top: 4px;
+    left: 0px;
+}
+
+.contenedor-texto {
+    width: 200px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--color-texto-casi-rojo);
+    text-align: center;
+}
+
+h1 {
+    color: var(--color-seccion);
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    color: var(--color-texto-amarillo);
+    position: relative;
+    top: 600px;
+    left: 60px;
+    transform: rotate(-90deg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* animacion-de-carga */
+
+.pantalla-de-carga {
+    width: 100%;
+    height: 753px;
+    background-color: rgb(124, 114, 114);
+    position: relative;
+    top: -700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fin {
+    animation: chao 3s forwards;
+}
+
+@keyframes chao {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+.puntos-de-carga {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: yellow;
+    position: relative;
+    top: 300px;
+    animation-name: puntos;
+    animation-duration: 3s;
+    animation-iteration-count: 3s;
+}
+
+@keyframes puntos {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.puntos-de-carga:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.puntos-de-carga:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.puntos-de-carga:nth-child(3) {
+    animation-delay: 1s;
+}
+
+
+/* modal */
+
+.contenedor-modal {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #47a386;
+    box-shadow: 2px 2px 6px rgb(1, 63, 1);
+    position: relative;
+    left: 0px;
+    top: -1050px;
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+.show-2{
+    visibility: hidden;
+}
+
+.spider-modal {
+    width: 60px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.p-modal {
+    position: relative;
+    top: -25px;
+    left: 5px;
+    text-align: center;
+    background-color: #66c5a7be;
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contenedor-modal-2 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #47a386;
+    box-shadow: 2px 2px 6px rgb(1, 63, 1);
+    position: relative;
+    top: -1150px;
+    left: 100px;
+    visibility: hidden;
+}
+
+.capitan-america-modal {
+    width: 70px;
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+
+.p-modal-2 {
+    position: relative;
+    top: -30px;
+    left: 5px;
+    text-align: center;
+    background-color: #66c5a7be;
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#abrir {
+    position: relative;
+    top: -1000px;
+}
+
+#bm{
+    position: relative;
+    top: -1000px;
+}
+
+#bmt{
+    position: relative;
+    top: -1000px;
+}
+
+.show-3{
+    visibility: visible;
+}
+
+.show-4{
+    visibility: hidden;
+}
+
+.contenedor-modal-3 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #47a386;
+    box-shadow: 2px 2px 6px rgb(1, 63, 1);
+    position: relative;
+    left: 200px;
+    top: -1250px;
+    visibility: hidden;
+}
+
+.ant-man-modal {
+    width: 70px;
+    position: relative;
+    left: 10px;
+    top: 0px;
+}
+
+.p-modal-3 {
+    position: relative;
+    top: -35px;
+    left: 5px;
+    text-align: center;
+    background-color: #66c5a7be;
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#close {
+    background-color: transparent;
+    position: relative;
+    left: 9px;
+    top: 2px;
+    border: none;
+    cursor: pointer;
+    color: wheat;
+    font-size: 20px;
+    float: left;
+}
+
+
+/* Desktop */
+
+@media (min-width: 1000px) {
+    .contenedor-mobile {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+    .hr-header {
+        width: 1300px;
+    }
+    .div-img {
+        margin-top: -452px;
+        height: 722px;
+        width: 200px;
+    }
+    .imagenes-abajo {
+        width: 830px;
+        align-items: center;
+        border-top-right-radius: 50px;
+    }
+    .contenedor-3-imagenes {
+        width: 800px;
+        justify-content: space-evenly;
+    }
+    #img {
+        width: 200px;
+        height: 170px;
+        border-radius: 30px;
+        background-color: var(--color-divs-imgs)
+    }
+    #img-2 {
+        width: 200px;
+        height: 170px;
+        border-radius: 30px;
+        background-color: var(--color-divs-imgs)
+    }
+    #img-3 {
+        width: 200px;
+        height: 170px;
+        border-radius: 30px;
+        background-color: var(--color-divs-imgs)
+    }
+    .spider-man {
+        width: 150px;
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+    .capitan-america {
+        width: 150px;
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+    .ant-man {
+        width: 150px;
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+    .iron-derecha {
+        width: 300px;
+        position: relative;
+        top: 190px;
+        right: 120px;
+    }
+    header {
+        height: 80px;
+    }
+    a {
+        font-size: 25px;
+    }
+    .contenedor-texto {
+        position: relative;
+        left: 60px;
+        top: -30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+        position: relative;
+        left: 80px;
+    }
+    .logo-header {
+        position: relative;
+        left: 25px;
+    }
+    .pantalla-de-carga {
+        position: relative;
+        top: -750px;
+    }
+    .contenedor-modal {
+        position: relative;
+        left: 100px;
+        top: -1150px;
+        width: 170px;
+        height: 170px;
+    }
+    .contenedor-modal-2 {
+        position: relative;
+        left: 350px;
+        top: -1320px;
+        width: 170px;
+        height: 170px;
+    }
+    .contenedor-modal-3 {
+        position: relative;
+        left: 600px;
+        top: -1490px;
+        width: 170px;
+        height: 170px;
+    }
+    .p-modal {
+        position: relative;
+        top: -20px;
+    }
+    .spider-modal {
+        width: 120px;
+    }
+    .capitan-america-modal {
+        width: 120px;
+        position: relative;
+        left: 5px;
+    }
+    .p-modal-2 {
+        position: relative;
+        top: -20px;
+        left: 5px;
+    }
+    .ant-man-modal {
+        width: 120px;
+    }
+    .p-modal-3 {
+        position: relative;
+        top: -30px;
+    }
+}

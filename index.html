@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Super Heroes </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png">
+</head>
+
+<body>
+    <main class="contenedor-mobile">
+        <header>
+            <img src="imagenes/logo.png" alt="Logo" class="logo-header">
+            <div class="div-header">
+                <a href="#"> Exclusivos </a>
+                <a href="#"> Nuevos </a>
+                <a href="#"> Vender </a>
+            </div>
+        </header>
+        <hr class="hr-header">
+        <div class="contenedor-texto">
+            <h3> Diseña el traje de tu </h3>
+            <h1> Super Héroe! </h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Quis quas illum, animi mollitia ratione hic ullam dignissimos <br> quos amet distinctio esse omnis dolorem neque enim <br> commodi eum fuga, harum culpa?</p>
+        </div>
+        <div class="div-img">
+            <h2> Iron Man </h2>
+            <img class="iron-derecha" src="imagenes/iron-derecha.png" alt="iron-derecha">
+        </div>
+        <div class="imagenes-abajo">
+            <div class="contenedor-3-imagenes">
+                <div id="img">
+                    <img class="spider-man" src="imagenes/spider.webp" alt="spider-man">
+                </div>
+                <div id="img-2">
+                    <img class="capitan-america" src="imagenes/Captain-America-PNG-HD-Quality.png" alt="capitan-america">
+                </div>
+                <div id="img-3">
+                    <img class="ant-man" src="imagenes/ant-man.webp" alt="ant-man">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="fin">
+        <div class="pantalla-de-carga">
+            <div class="puntos-de-carga"></div>
+            <div class="puntos-de-carga"></div>
+            <div class="puntos-de-carga"></div>
+        </div>
+    </div>
+    <div class="contenedor-modal" id="contenedor_modal">
+        <button class="close" id="close"> X </button>
+        <img src="imagenes/spider.webp" alt="Spider-man-modal" class="spider-modal">
+        <p class="p-modal"> Me interesa </p>
+    </div>
+    <div class="contenedor-modal-2" id="contenedor_modal_2">
+        <button class="cerrarm" id="cerrarm"> X </button>
+        <img src="imagenes/Captain-America-PNG-HD-Quality.png" alt="Capitan-america" class="capitan-america-modal">
+        <p class="p-modal-2"> Me interesa </p>
+    </div>
+    <div class="contenedor-modal-3" id="contenedor_modal_3">
+        <button class="closetres" id="closetres"> X </button>
+        <img src="imagenes/ant-man.webp" alt="ant-man-modal" class="ant-man-modal">
+        <p class="p-modal-3"> Me interesa </p>
+    </div>
+    <button class="abrir" id="abrir"> Click </button>
+    <button class="bm" id="bm"> Modal 2 </button>
+    <button class="bmt" id="bmt"> Modal 3</button>
+    <button class="boton-modal-tres" id="boton-modal-tres"> Modal 3 </button>
+    
+    <script src="./index.js"></script>
+</body>
+
+</html>
